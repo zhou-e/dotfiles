@@ -6,7 +6,7 @@ status line, beads task tracking, bash, git and tmux.
 ## Quick start (new machine)
 
 ```bash
-git clone <this repo> ~/.code/dotfiles/main && cd ~/.code/dotfiles/main
+git clone https://github.com/zhou-e/dotfiles.git ~/.code/dotfiles/main && cd ~/.code/dotfiles/main
 sudo apt install -y tmux python3 git curl gh   # system packages (gh optional: see below)
 ./bootstrap/deps.sh      # nvm + Node LTS, ccstatusline, gh (if missing), beads; no sudo
 ./install.sh             # link/copy configs into $HOME (moves anything it replaces to ~/.dotfiles-backup/)
@@ -78,7 +78,7 @@ These can't or shouldn't be in a public repo. Recreate them by hand:
 | Superpowers skills (`brainstorming`, `writing-plans`, `test-driven-development`, …) | Third-party (MIT), has its own upstream | Install the Superpowers skills from upstream ([obra/superpowers](https://github.com/obra/superpowers)) into `~/.claude/skills/` |
 | AWS skills (`aws-*`, `amazon-bedrock`, `launch-with-aws`, `signing-in-to-aws`) | Third-party, has its own upstream | Reinstall from AWS's agent skills pack into `~/.claude/skills/`. **The source URL wasn't recorded on the original machine (installed 2026-11-13); add it here once known.** |
 | Plugin marketplace `claude-plugins-official` | Managed by Claude Code | In Claude Code: `/plugin marketplace add anthropics/claude-plugins-official` |
-| `~/kb` (knowledge base) | Private notes | Clone the private kb repo to `~/.code/kb/main`, then `ln -s ~/.code/kb/main ~/kb` |
+| `~/kb` (knowledge base) | Private notes | `gh repo clone zhou-e/kb ~/.code/kb/main` (private; needs `gh auth login`), then `ln -s ~/.code/kb/main ~/kb` |
 | Beads databases (`.beads/` in each project) | Per-project data | Created by `bd init` per project (see `claude/CLAUDE.md`) |
 
 ## Tests
