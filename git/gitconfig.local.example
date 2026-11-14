@@ -1,0 +1,5 @@
+# Your git identity. install.sh copies this to ~/.gitconfig.local when it can't carry over an
+# existing one. Uncomment and fill in; until then git refuses to commit (no silent placeholder author).
+#[user]
+#	name = Your Name
+#	email = you@example.com

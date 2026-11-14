@@ -1,0 +1,22 @@
+{
+  "version": 4,
+  "lines": [
+    [
+      { "id": "1", "type": "model", "color": "cyan" },
+      { "id": "2", "type": "separator" },
+      { "id": "3", "type": "tokens-input", "color": "green" },
+      { "id": "4", "type": "separator" },
+      { "id": "5", "type": "tokens-output", "color": "yellow" },
+      { "id": "6", "type": "separator" },
+      { "id": "7", "type": "tokens-cached", "color": "brightBlack" },
+      { "id": "8", "type": "separator" },
+      { "id": "9", "type": "tokens-total", "color": "brightWhite" },
+      { "id": "10", "type": "separator" },
+      { "id": "11", "type": "context-percentage", "color": "magenta" },
+      { "id": "12", "type": "separator" },
+      { "id": "13", "type": "session-cost", "color": "blue" }
+    ],
+    [],
+    []
+  ]
+}
